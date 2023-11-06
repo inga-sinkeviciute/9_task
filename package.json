@@ -1,12 +1,15 @@
 {
-  "name": "9_task",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Inga Sinkeviciute",
-  "license": "ISC"
+	"name": "9_task",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "dead-server --host=localhost --port=4610"
+	},
+	"keywords": [],
+	"author": "Inga Sinkeviciute",
+	"license": "ISC",
+	"devDependencies": {
+		"dead-server": "^1.0.9"
+	}
 }
