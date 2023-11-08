@@ -8,7 +8,7 @@ kanban.addTask({
 	desc: "Pirmos uzduoties pilnas aprasas... laaaabai issamiai nupasakoja ka reikia padaryti ;)",
 	createdOn: "2023-11-08 09:03:15",
 	deadline: "2023-12-24 00:00:00",
-	tags: ["Design"],
+	tags: [{ text: "Design", color: "#333" }],
 });
 
 kanban.addTask({
@@ -17,7 +17,10 @@ kanban.addTask({
 	desc: "Antros uzduoties pilnas aprasas... laaaabai issamiai nupasakoja ka reikia padaryti ;)",
 	createdOn: "2023-11-08 10:03:15",
 	deadline: "2023-12-24 00:00:00",
-	tags: ["UX"],
+	tags: [
+		{ text: "UX", color: "#f00" },
+		{ text: "UI", color: "#090" },
+	],
 });
 
 kanban.addTask({
@@ -26,7 +29,7 @@ kanban.addTask({
 	desc: "Trecios uzduoties pilnas aprasas :P",
 	createdOn: "2023-11-08 10:13:15",
 	deadline: "2023-12-20 00:00:00",
-	tags: ["Development"],
+	tags: [{ text: "Development", color: "#00c" }],
 });
 
 console.log(kanban);
