@@ -3,26 +3,33 @@
 	flex-direction: column;
 	gap: 2rem;
 }
+
 .form .form-row {
 	display: flex;
 	flex-direction: column;
 	gap: 0.3rem;
 }
+
 .form .label {
 	font-size: 1.1rem;
 }
+
 .form .input,
 .form .textarea {
 	font-size: 1.2rem;
 	line-height: 1em;
 	padding: 0.5em 1rem;
+	width: 100%;
+	box-sizing: border-box;
 }
+
 .form .textarea {
 	min-height: 3em;
 	height: 4em;
 	max-height: 11em;
 	resize: vertical;
 }
+
 .form .btn {
 	font-size: 1.2rem;
 	padding: 0.5rem 1rem;

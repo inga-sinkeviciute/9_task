@@ -67,7 +67,7 @@ export class Todo {
 
 	addTask(task) {
 		this.renderTask(task);
-		localStorage.setItem("46g-task-list", JSON.stringify(this.tasks));
+		localStorage.setItem("task-list", JSON.stringify(this.tasks));
 	}
 
 	renderTask(task) {
@@ -92,11 +92,15 @@ export class Todo {
 	}
 
 	loadInitialData() {
-		const localData = localStorage.getItem("46g-task-list");
+		const localData = localStorage.getItem("task-list");
 		const data = JSON.parse(localData);
 
-		for (const task of data) {
-			this.renderTask(task);
+		if (Array.isArray(data)) {
+			for (const task of data) {
+				this.renderTask(task);
+			}
+		} else {
+			console.error("Data is not an array:", data);
 		}
 	}
 }
